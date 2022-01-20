@@ -1,0 +1,149 @@
+<html>
+    <head>
+
+        <title>Welcome</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body id="lit" style="background-image:url(b.jpg); background-size:cover;
+    background-repeat: no-repeat; background-attachment:fixed;">
+
+        <ul  class="nav justify-content-center fs-1" style="background-color: #6d3d0d; ">
+            <li class="nav-item">
+              <a style="color: rgb(240, 177, 95);" class="nav-link active  link-light" aria-current="page" href="as1.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a  style="color: rgb(240, 177, 95);" class="nav-link  link-light" href="link">About</a>
+            </li>
+            <li class="nav-item">
+              <a  style="color: rgb(240, 177, 95);" class="nav-link  link-light" href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin">LinkedIn</a>
+            </li>
+            <li class="nav-item">
+              <a  style="color: rgb(240, 177, 95);" class="nav-link  link-light" href="https://www.instagram.com/?hl=en">Instagram</a>
+            </li>
+          </ul>  
+
+          <br><br><br><br>
+
+          <CENTER>
+          
+          <p id="ar" style="font-size:40px;  color:#6d3d0d;">8 Life-Changing Books <br>Everyone Should Read<br> At Least Once</p>
+
+          <button class="btn btn-outline-success btn-outline-warning" onclick="arabic()">Arabic</button>
+          <button class="btn btn-outline-success btn-outline-info" onclick="english()">English</button>
+
+          <script>
+
+          function arabic()
+                {
+                    document.getElementById("ar").innerHTML = "8 كتب تغير الحياة يجب على الجميع قراءتها مرة واحدة على الأقل";
+                }
+
+                function english()
+                {
+                    document.getElementById("ar").innerHTML = "8 Life-Changing Books Everyone Should Read At Least Once"; 
+                }
+
+</script>
+
+          <br><br>
+
+        <script type="text/javascript">
+            function link() {
+              var link_s = document.getElementById('link_id').value;
+              document.getElementById('link_str').innerHTML = link_s.link()
+            }
+          </script>
+
+    
+          <input type='text' id='link_id'>
+          <input  class="btn btn-outline-success" type='button' id='link_str' value='Search' onClick='link()'>
+
+        </CENTER>
+
+<style>
+
+#link_id{
+
+
+    background: transparent;
+    border: none;
+    display: block;
+    border-bottom: 2px solid #757575;
+    border-radius: 4px;
+}
+
+
+
+</style>
+
+
+
+        <br><br><br><br>
+
+        <center>
+
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <img src="be.webp" class="w-50">
+                  </div>
+                  <div class="col">
+                    <img src="st.webp" class="w-50">
+                  </div>
+                  <div class="col">
+                    <img src="tfa.webp" class="w-50">
+                  </div>
+                  <div class="col">
+                    <img src="wt.webp" class="w-50">
+                  </div>
+                </div>
+
+                <br><br>
+               
+              <div class="row">
+                <div class="col">
+                    <img src="ut.webp" class="w-50">
+                </div>
+                <div class="col">
+                    <img src="ht.webp" class="w-50">
+                </div>
+                <div class="col">
+                    <img src="epl.webp" class="w-50">
+                </div>
+                <div class="col">
+                    <img src="lop.webp" class="w-50">
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <button class="btn btn-outline-light" style=" color:rgb(240, 177, 95);" onclick="light()">Light</button>
+        <button class="btn btn-outline-dark" style=" color:rgb(240, 177, 95);" onclick="dark()">Dark</button>
+
+        <script>
+
+                function light()
+            {
+                document.getElementById("lit").style="background-image:url(b.jpg); background-size:cover background-repeat: no-repeat; background-attachment:fixed;";
+            }
+
+            function dark()
+            {
+                document.getElementById("lit").style = "background-image:url(lb.jpg); background-size:cover background-repeat: no-repeat; background-attachment:fixed;";
+            }
+        </script>
+
+        <br><br><br>
+
+    </body>
+
+    
+</html>
